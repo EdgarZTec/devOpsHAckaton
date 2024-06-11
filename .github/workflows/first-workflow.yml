@@ -1,6 +1,8 @@
 # This is a basic workflow that is manually triggered
 
 name: Manual workflow
+uses: mscoutermarsh/cowsays-action@v1
+            
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -32,3 +34,8 @@ jobs:
       run: echo "step1"
     - name: paso dos
       run: echo "step2"
+    - name: Ship it
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'ship ship ship!'
+        color: 'red'
